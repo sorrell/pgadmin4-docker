@@ -1,6 +1,6 @@
 FROM python:2-alpine
 
-ENV PGADMIN_VERSION=1.0 
+ENV PGADMIN_VERSION=1.2
 
 RUN apk add --no-cache alpine-sdk postgresql-dev \
  && echo "https://ftp.postgresql.org/pub/pgadmin3/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-${PGADMIN_VERSION}-py2-none-any.whl" > requirements.txt \
